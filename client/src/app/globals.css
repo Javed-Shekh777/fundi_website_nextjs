@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --main-width: 1450px;
+  --green: #28a745;
+  --light-white: #f4f4f4;
+  --gray: #666666;
+  --red: #ff4d4d;
+  --yellow: #ffc107;
+}
+.container {
+  max-width: var(--main-width);
+  margin: 0 auto;
+}
+
+.green{
+  @apply bg-[var(--green)];
+
+}
+.text-green{
+  @apply text-[var(--green)];
+}
+.light-white{
+  @apply bg-[var(--light-white)];
+
+}
+.text-light-white{
+  @apply text-[var(--light-white)];
+}
+.gray {
+  @apply bg-[var(--gray)];
+}
+.text-gray{
+  @apply text-[var(--gray)];
+
+}
+.red  {
+  @apply bg-[var(--red)];
+}
+.text-yellow {
+  @apply text-[var(--yellow)];
+
+}
+
+.yellow {
+  @apply bg-[var(--yellow)];
+}
+

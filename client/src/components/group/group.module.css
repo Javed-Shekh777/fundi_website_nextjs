@@ -1,0 +1,9 @@
+.container {
+  padding: 40px 10px;
+}
+
+.groupData {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}

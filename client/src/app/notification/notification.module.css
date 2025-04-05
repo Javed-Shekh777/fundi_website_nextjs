@@ -1,0 +1,6 @@
+.container{
+    padding: 30px 0;
+}
+.notification:last-child{
+    border-bottom: 0px ;
+}
