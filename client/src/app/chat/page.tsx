@@ -248,7 +248,7 @@ const Profile = () => {
                                 {msg.type === "file" && (
                                   <div className="rounded-md p-1 border border-gray-300">
                                     <Image
-                                      src={msg?.fileUrl}
+                                      src={msg?.fileUrl || ""}
                                       alt="Uploaded File"
                                       width={200}
                                       height={200}
