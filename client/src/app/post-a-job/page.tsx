@@ -152,6 +152,7 @@ type PrefferedTime = {
 
 type Category = {
   label: string;
+  value:string;
   icon?: React.JSX.Element;
   subcategories?: SubCategory[]; // ✅ Ensure it's an array (or undefined)
 };

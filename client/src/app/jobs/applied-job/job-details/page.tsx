@@ -1,21 +1,12 @@
 "use client";
-import React, { useRef, useState } from "react";
-import useClickOutside from "@/hooks/useClickOutside";
+import React  from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FiCalendar } from "react-icons/fi";
 const ExploreJobDetailsPage = () => {
-  const arr = [1, 2, 3, 4, 5];
 
-  const [isSuccess, setIsSuccess] = useState(false);
-  const outsideClickSuccessRef = useRef<HTMLDivElement | null>(null);
+  
 
-  const handlePlaceBidSubmit = (e: React.FocusEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSuccess(true);
-  };
-
-  useClickOutside(outsideClickSuccessRef as React.RefObject<HTMLElement>, () => setIsSuccess(false));
 
   return (
     <>
