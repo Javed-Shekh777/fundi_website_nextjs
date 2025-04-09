@@ -8,7 +8,7 @@ import { FaCheck, FaStar } from "react-icons/fa";
 const ExploreJobDetailsPage = () => {
 
   const [isSuccess, setIsSuccess] = useState(false);
-  const outsideClickSuccessRef = useRef<HTMLButtonElement | null>(null);
+  const outsideClickSuccessRef = useRef<HTMLDivElement | null>(null);
 
   const handlePlaceBidSubmit = (e: React.FocusEvent<HTMLFormElement>) => {
     e.preventDefault();
