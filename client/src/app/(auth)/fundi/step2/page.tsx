@@ -25,7 +25,7 @@ const cities: City[] = [
  
  
 
-const page = () => {
+const Step2 = () => {
   const [city, setCity] = useState<City | null>(null);
   
   const [cityIsOpen, setCityIsOpen] = useState(false);
@@ -175,4 +175,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Step2;

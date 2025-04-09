@@ -125,9 +125,7 @@ type Category = {
   icon?: React.JSX.Element;
   subcategories?: SubCategory[];  
 };
-type City = {
-  label: string;
-};
+ 
 
 type ServiceExprience = {
   label: string;
@@ -158,7 +156,7 @@ const ServiceExpriences: ServiceExprience[] = [
   },
 ];
 
-const page = () => {
+const Step3 = () => {
   const [serviceExperience, setServiceExperience] =
     useState<ServiceExprience | null>(null);
 
@@ -398,4 +396,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Step3;

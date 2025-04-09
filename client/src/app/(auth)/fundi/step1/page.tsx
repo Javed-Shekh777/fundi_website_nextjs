@@ -8,7 +8,7 @@ import {
   FaUserCircle,
 } from "react-icons/fa";
 
-const page = () => {
+const Step1 = () => {
   return (
     <>
       <header
@@ -142,4 +142,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Step1;

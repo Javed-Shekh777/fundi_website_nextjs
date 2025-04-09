@@ -7,6 +7,7 @@ import {
   FaChalkboardTeacher,
   FaCheckCircle,
   FaChevronDown,
+  FaLongArrowAltRight,
   FaPaperPlane,
   FaPlus,
   FaRegEdit,
@@ -339,7 +340,7 @@ const Profile = () => {
   useClickOutside(transactionTypeRef as React.RefObject<HTMLElement>, () => setCityIsOpen(false));
   useClickOutside(transactionStatusRef as React.RefObject<HTMLElement>, () => setCityIsOpen(false));
 
-  const [messages, setMessages] = useState([
+  const [messages] = useState([
     {
       id: 1,
       text: "Hello! How can I help you?",
@@ -368,6 +369,7 @@ const Profile = () => {
     },
     { id: 5, text: "Hello! How can I help you?", sender: "user", type: "text" },
   ]);
+
   const [newMessage, setNewMessage] = useState("");
 
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(

@@ -169,7 +169,6 @@ const PostJob = () => {
 
   const [selectedDate, setSelectedDate] = useState("");
   const dateInputRef = useRef<HTMLInputElement>(null);
-  const [selectedTime, setSelectedTime] = useState<string | null>(null);
   const [isSpecificDate, setIsSpecificDate] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -191,16 +190,14 @@ const PostJob = () => {
 
   const handleDateAndTime = (name: string) => {
     setSelectedDate("");
-    setSelectedTime("");
     if (!name) {
       setIsSpecificDate(true);
     } else {
       setIsSpecificDate(false);
       let t = new Date();
       let date = t.toISOString().split("T")[0];
-      let time = t.toTimeString().split(" ")[0];
+      // let time = t.toTimeString().split(" ")[0];
       setSelectedDate(date);
-      setSelectedTime(time);
     }
   };
 
@@ -440,6 +437,7 @@ const PostJob = () => {
                       ref={dateInputRef}
                       type="date"
                       id="dateInput"
+                      value={selectedDate}
                       className="absolute inset-0 opacity-0 w-full cursor-pointer"
                       onChange={(e) => setSelectedDate(e.target.value)}
                     />

@@ -92,36 +92,37 @@ const Profile = () => {
 
   useClickOutside(dashbarRef as React.RefObject<HTMLElement> , () => setIsDashbarActive(false));
 
-  const [messages, setMessages] = useState([
-    {
-      id: 1,
-      text: "Hello! How can I help you?",
-      sender: "support",
-      type: "text",
-    },
-    {
-      id: 2,
-      fileUrl: "/verified1.svg",
-      sender: "user",
-      type: "file",
-      fileName: "Hello.jpeg",
-    },
-    {
-      id: 3,
-      text: "Hello! How can I help you?",
-      sender: "support",
-      type: "text",
-    },
-    {
-      id: 4,
-      fileUrl: "/verified1.svg",
-      sender: "support",
-      type: "file",
-      fileName: "prem.jpeg",
-    },
-    { id: 5, text: "Hello! How can I help you?", sender: "user", type: "text" },
-  ]);
-  const [newMessage, setNewMessage] = useState("");
+   const messages = [{
+    id: 1,
+    text: "Hello! How can I help you?",
+    sender: "support",
+    type: "text",
+  },
+  {
+    id: 2,
+    fileUrl: "/verified1.svg",
+    sender: "user",
+    type: "file",
+    fileName: "Hello.jpeg",
+  },
+  {
+    id: 3,
+    text: "Hello! How can I help you?",
+    sender: "support",
+    type: "text",
+  },
+  {
+    id: 4,
+    fileUrl: "/verified1.svg",
+    sender: "support",
+    type: "file",
+    fileName: "prem.jpeg",
+  },
+  { id: 5, text: "Hello! How can I help you?", sender: "user", type: "text" },
+]
+  
+
+
 
   return (
     <section className={`profileSection `}>

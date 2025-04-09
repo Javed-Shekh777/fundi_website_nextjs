@@ -8,7 +8,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 type CustumBrnPtops = {
   title: string;
   icon?: React.ReactElement;
-  func?: () => {};
+  func?: () => void;
 };
 
 const SignUpPage = () => {
