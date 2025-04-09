@@ -119,7 +119,6 @@ const ExploreJobDetailsPage = () => {
                   </h1>
                   <form
                     className="form sm:px-10 px-2"
-                    onSubmit={handlePlaceBidSubmit}
                   >
                     <div className="inputGroup mt-10 relative flex flex-col space-y-2 flex-1">
                       <label

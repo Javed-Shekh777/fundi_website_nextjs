@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiCalendar } from "react-icons/fi";
 import { FaStar } from "react-icons/fa";
+
+
 const ExploreJobDetailsPage = () => {
  
   return (
