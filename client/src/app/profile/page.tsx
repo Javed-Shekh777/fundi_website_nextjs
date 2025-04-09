@@ -1048,10 +1048,7 @@ const Profile = () => {
                             <label
                               htmlFor="date1"
                               className="w-full px-3 py-3 flex items-center justify-between border rounded-lg bg-white shadow cursor-pointer"
-                              onClick={() => {
-                                console.log("Triggered");
-                                document.getElementById("date1")?.showPicker();
-                              }}
+                               
                             >
                               <p>From</p>
                               <FiCalendar size={24} className="text-green" />
@@ -1078,10 +1075,7 @@ const Profile = () => {
                             <label
                               htmlFor="date2"
                               className="w-full px-3 py-3 flex items-center justify-between border rounded-lg bg-white shadow cursor-pointer"
-                              onClick={() => {
-                                console.log("Triggered");
-                                document.getElementById("date2")?.showPicker();
-                              }}
+                               
                             >
                               <p>To</p>
                               <FiCalendar size={24} className="text-green" />
