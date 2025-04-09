@@ -8,7 +8,7 @@ import { FaCheck, FaStar } from "react-icons/fa";
 const ExploreJobDetailsPage = () => {
 
   const [isSuccess, setIsSuccess] = useState(false);
-  const outsideClickSuccessRef = useRef<HTMLButtonElement|null>(null);
+  const outsideClickSuccessRef = useRef<HTMLButtonElement | null>(null);
 
   const handlePlaceBidSubmit = (e: React.FocusEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -224,7 +224,6 @@ const ExploreJobDetailsPage = () => {
 
                     <div className="flex items-center justify-center my-20">
                       <button
-                        ref={outsideClickSuccessRef}
                         className="rounded-lg cursor-pointer  mx-auto text-center self-center  tracking-wide sm:w-72 w-full   py-2 green text-white text-[1rem]"
                         type="submit"
                       >
