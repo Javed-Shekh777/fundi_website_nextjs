@@ -194,8 +194,8 @@ const PostJob = () => {
       setIsSpecificDate(true);
     } else {
       setIsSpecificDate(false);
-      let t = new Date();
-      let date = t.toISOString().split("T")[0];
+      const t = new Date();
+      const date = t.toISOString().split("T")[0];
       // let time = t.toTimeString().split(" ")[0];
       setSelectedDate(date);
     }
