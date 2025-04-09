@@ -2,7 +2,7 @@
 import BreadCrumb from "@/components/breadcrumb/BreadCrumb";
 import useClickOutside from "@/hooks/useClickOutside";
 import Image from "next/image";
-import React, {  useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import {
   FaChalkboardTeacher,
   FaCheckCircle,
@@ -317,7 +317,6 @@ const Profile = () => {
     useState<TransactionStatus | null>(null);
 
   const [cityIsOpen, setCityIsOpen] = useState(false);
-  
 
   const [serviceExperienceIsOpen, setServiceExperienceIsOpen] = useState(false);
 
@@ -328,17 +327,27 @@ const Profile = () => {
 
   const dashbarRef = useRef<HTMLDivElement>(null);
   const cityRef = useRef<HTMLLIElement>(null);
- 
+
   const resonRef = useRef<HTMLButtonElement>(null);
   const transactionTypeRef = useRef<HTMLButtonElement>(null);
   const transactionStatusRef = useRef<HTMLButtonElement>(null);
 
-  useClickOutside(dashbarRef as React.RefObject<HTMLElement>, () => setIsDashbarActive(false));
-  useClickOutside(cityRef as React.RefObject<HTMLElement>, () => setCityIsOpen(false));
-  useClickOutside(resonRef as React.RefObject<HTMLElement>, () => setCityIsOpen(false));
+  useClickOutside(dashbarRef as React.RefObject<HTMLElement>, () =>
+    setIsDashbarActive(false)
+  );
+  useClickOutside(cityRef as React.RefObject<HTMLElement>, () =>
+    setCityIsOpen(false)
+  );
+  useClickOutside(resonRef as React.RefObject<HTMLElement>, () =>
+    setCityIsOpen(false)
+  );
 
-  useClickOutside(transactionTypeRef as React.RefObject<HTMLElement>, () => setCityIsOpen(false));
-  useClickOutside(transactionStatusRef as React.RefObject<HTMLElement>, () => setCityIsOpen(false));
+  useClickOutside(transactionTypeRef as React.RefObject<HTMLElement>, () =>
+    setCityIsOpen(false)
+  );
+  useClickOutside(transactionStatusRef as React.RefObject<HTMLElement>, () =>
+    setCityIsOpen(false)
+  );
 
   const [messages] = useState([
     {
@@ -377,7 +386,6 @@ const Profile = () => {
   );
   const [selectedSubCategory, setSelectedSubCategory] =
     useState<SubCategory | null>(null);
-
 
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
 
@@ -1048,7 +1056,6 @@ const Profile = () => {
                             <label
                               htmlFor="date1"
                               className="w-full px-3 py-3 flex items-center justify-between border rounded-lg bg-white shadow cursor-pointer"
-                               
                             >
                               <p>From</p>
                               <FiCalendar size={24} className="text-green" />
@@ -1075,7 +1082,6 @@ const Profile = () => {
                             <label
                               htmlFor="date2"
                               className="w-full px-3 py-3 flex items-center justify-between border rounded-lg bg-white shadow cursor-pointer"
-                               
                             >
                               <p>To</p>
                               <FiCalendar size={24} className="text-green" />
