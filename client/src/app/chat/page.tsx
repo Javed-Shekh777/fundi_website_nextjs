@@ -9,7 +9,7 @@ import {
   MdOutlineKeyboardDoubleArrowRight,
   MdVerified,
 } from "react-icons/md";
-import {  FiCamera } from "react-icons/fi";
+import { FiCamera } from "react-icons/fi";
 import { RiCheckDoubleLine } from "react-icons/ri";
 
 const charUsers = [
@@ -19,7 +19,7 @@ const charUsers = [
     username: "Leon",
     isNoty: true,
     isBatch: false,
-    time:"12.34am"
+    time: "12.34am",
   },
   {
     id: 2,
@@ -27,8 +27,7 @@ const charUsers = [
     username: "Mike",
     isNoty: false,
     isBatch: true,
-    time:"05.00pm"
-
+    time: "05.00pm",
   },
   {
     id: 3,
@@ -36,8 +35,7 @@ const charUsers = [
     username: "John",
     isNoty: true,
     isBatch: false,
-    time:"12.34am"
-
+    time: "12.34am",
   },
   {
     id: 4,
@@ -45,8 +43,7 @@ const charUsers = [
     username: "John",
     isNoty: false,
     isBatch: false,
-    time:"04.30pm"
-
+    time: "04.30pm",
   },
   {
     id: 5,
@@ -54,7 +51,7 @@ const charUsers = [
     username: "Leon",
     isNoty: true,
     isBatch: false,
-    time:"12.34am"
+    time: "12.34am",
   },
   {
     id: 6,
@@ -62,17 +59,15 @@ const charUsers = [
     username: "Mike",
     isNoty: false,
     isBatch: true,
-    time:"05.00pm"
-
+    time: "05.00pm",
   },
   {
-    id:7,
+    id: 7,
     imgUrl: "/recent3.svg",
     username: "John",
     isNoty: true,
     isBatch: true,
-    time:"12.34am"
-
+    time: "12.34am",
   },
   {
     id: 8,
@@ -80,8 +75,7 @@ const charUsers = [
     username: "John",
     isNoty: false,
     isBatch: false,
-    time:"04.30pm"
-
+    time: "04.30pm",
   },
 ];
 
@@ -90,39 +84,41 @@ const Profile = () => {
 
   const dashbarRef = useRef<HTMLDivElement>(null);
 
-  useClickOutside(dashbarRef as React.RefObject<HTMLElement> , () => setIsDashbarActive(false));
+  useClickOutside(dashbarRef as React.RefObject<HTMLElement>, () =>
+    setIsDashbarActive(false)
+  );
 
-   const messages = [{
-    id: 1,
-    text: "Hello! How can I help you?",
-    sender: "support",
-    type: "text",
-  },
-  {
-    id: 2,
-    fileUrl: "/verified1.svg",
-    sender: "user",
-    type: "file",
-    fileName: "Hello.jpeg",
-  },
-  {
-    id: 3,
-    text: "Hello! How can I help you?",
-    sender: "support",
-    type: "text",
-  },
-  {
-    id: 4,
-    fileUrl: "/verified1.svg",
-    sender: "support",
-    type: "file",
-    fileName: "prem.jpeg",
-  },
-  { id: 5, text: "Hello! How can I help you?", sender: "user", type: "text" },
-]
-  
+  const messages = [
+    {
+      id: 1,
+      text: "Hello! How can I help you?",
+      sender: "support",
+      type: "text",
+    },
+    {
+      id: 2,
+      fileUrl: "/verified1.svg",
+      sender: "user",
+      type: "file",
+      fileName: "Hello.jpeg",
+    },
+    {
+      id: 3,
+      text: "Hello! How can I help you?",
+      sender: "support",
+      type: "text",
+    },
+    {
+      id: 4,
+      fileUrl: "/verified1.svg",
+      sender: "support",
+      type: "file",
+      fileName: "prem.jpeg",
+    },
+    { id: 5, text: "Hello! How can I help you?", sender: "user", type: "text" },
+  ];
 
-
+  const [newMessage, setNewMessage] = useState("");
 
   return (
     <section className={`profileSection `}>
